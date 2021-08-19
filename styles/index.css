@@ -7,6 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     color: white;
 
@@ -138,7 +139,44 @@ a:hover {
   padding: 0 8px;
 }
 
+/* Accessibility: adaptive font sizing for screens <650px */
+
 @media screen and (max-width: 650px) {
+  .navbar a {
+    float: left;
+    font-size: 0.6em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .main h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .main h2 {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+
+  p, .text {
+    font-size: 1em;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 0.6em;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
   .column {
     width: 100%;
     display: block;
@@ -198,12 +236,17 @@ a:hover {
   background-color: #555;
 }
 
+.twitter-timeline {
+  margin:auto;
+}
+
 /* Footer styling */
 
 footer {
   padding: 16px;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   color: white;
   background-color:rgba(8, 167, 167);
   border-radius: 32px;;
