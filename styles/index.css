@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Krub", sans-serif;
 }
 
+/* Background and body of all pages */
+
 body {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -20,6 +22,8 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
 }  
+
+/* Hyperlink colouring */
 
 a:link {
   color: yellow;
@@ -236,8 +240,55 @@ a:hover {
   background-color: #555;
 }
 
+/* Twitter feed */
+
 .twitter-timeline {
   margin:auto;
+}
+
+/* Tabs inside page */
+
+.tab {
+  overflow: hidden;
+  background-color: darkcyan;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  top: 0;
+}
+
+.tablinks {
+  float: left;
+  border: none;
+  font-size: 16px;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: none;
+}
+
+.tablinks:hover {
+  background-color: green;
+}
+
+.tabcontent {
+  display: none;
+  background-color: white;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  padding: 14px 16px;
+  animation: fadeEffect 1s;
+}
+
+/* Tab fade animation */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.tabcontent h3 {
+  color: darkcyan;
 }
 
 /* Footer styling */
