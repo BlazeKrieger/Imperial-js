@@ -291,6 +291,15 @@ a:hover {
   color: darkcyan;
 }
 
+/* Molecule viewer */
+
+.viewer_3Dmoljs {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  border-radius: 9px;
+}
+
 /* Footer styling */
 
 footer {
