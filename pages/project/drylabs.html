@@ -54,17 +54,23 @@
   </div>
   <div class="main">
     <h1>Dry Labs</h1>
-    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-    <div class='viewer_3Dmoljs' data-pdb='1H0M' data-backgroundcolor='0xffffff' data-style='stick'
-    data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white'
-    data-select2='chain:B' data-style2='stick'
-    data-select3='chain:E' data-style3='cartoon:cartoon=spectrum'
-    data-select4='chain:F' data-style4='cartoon:cartoon=spectrum'
-    data-select5='chain:G' data-style5='cartoon:cartoon=spectrum'
-    data-select6='chain:H' data-style6='cartoon:cartoon=spectrum'>
-      1H0M
+    <h3>3D visualisation instructions:</h3>
+    Use mouse to manipulate the 3D render. <br><br>
+    To rotate: drag molecule to desired direction.<br><br>
+    To zoom: hold shift + drag downwards to zoom in/upwards to zoom out.<br><br>
+    To pan: hold ctrl + drag to desired direction.
+    <div class='mol_viewer'>
+      <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+      <div class='viewer_3Dmoljs' data-pdb='1H0M' data-backgroundcolor='0xffffff' data-style='stick'
+        data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white'
+        data-select2='chain:B' data-style2='stick' data-select3='chain:E' data-style3='cartoon:cartoon=spectrum'
+        data-select4='chain:F' data-style4='cartoon:cartoon=spectrum' data-select5='chain:G'
+        data-style5='cartoon:cartoon=spectrum' data-select6='chain:H' data-style6='cartoon:cartoon=spectrum'>
+        1H0M
+      </div>
+      <h4>3D structure of TraR protein bound to autoinducer and to target DNA</h4>
     </div>
-    <h3>3D structure of TraR protein bound to autoinducer and to target DNA</h3>
+
   </div>
 </body>
 <footer>Imperial College London iDEC 2021 Team ©</footer>

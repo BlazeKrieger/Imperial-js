@@ -293,11 +293,23 @@ a:hover {
 
 /* Molecule viewer */
 
-.viewer_3Dmoljs {
+.mol_viewer {
   height: 50%;
-  width: 50%;
+  width: 40%;
+  position: relative;
+  margin: 16px;
+}
+
+.viewer_3Dmoljs {
+  height: 100%;
+  width: 100%;
   position: relative;
   border-radius: 9px;
+  overflow: auto;
+}
+
+.mol_viewer h1, .mol_viewer h2, .mol_viewer h3, .mol_viewer h4, .mol_viewer p {
+  text-align: center;
 }
 
 /* Footer styling */
