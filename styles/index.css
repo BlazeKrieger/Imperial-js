@@ -297,7 +297,8 @@ a:hover {
   height: 50%;
   width: 40%;
   position: relative;
-  margin: 16px;
+  margin: 64px;
+  margin-bottom: 128px;
 }
 
 .viewer_3Dmoljs {
