@@ -25,11 +25,11 @@ body {
 
 /* Hyperlink colouring */
 
-a:link {
+.dropdown-content a:link {
   color: yellow;
 }
 
-a:hover {
+.dropdown-content a:hover {
   color: orange;
 }
 
@@ -242,6 +242,10 @@ a:hover {
 
 /* Twitter feed */
 
+.twitterfeed {
+  margin: 0 auto;
+}
+
 .twitter-timeline {
   margin:auto;
 }
@@ -296,7 +300,6 @@ a:hover {
 .mol_viewer {
   height: 50%;
   width: 40%;
-  position: relative;
   margin: 64px;
   margin-bottom: 128px;
 }
