@@ -1,71 +1,79 @@
 <html>
-    <head><!-- Put fonts and css links here -->
 
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+  <!-- Put fonts and css links here -->
 
-        <title>Imperial Team Wiki 2021</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Favicons -->
-        <!-- (Google) Fonts -->
-        <!-- Main CSS-->
-        <link href="styles/index.css" rel="stylesheet">
+  <title>Imperial Team Wiki 2021</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    </head>
-    <body>
-        <!-- Navigation menu -->
-        <div class="navbar">
-            <a href="#home">Home</a>
-            <div class="dropdown">
-              <button class="dropbtn">About 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="pages/about/team.html">Our Team</a>
-                <a href="pages/about/collab.html">Collaborators</a>
-              </div>
-            </div> 
-            <div class="dropdown">
-                <button class="dropbtn">Project
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="pages/project/background.html">Background</a>
-                  <a href="pages/project/design.html">Design</a>
-                  <a href="pages/project/drylabs.html">Dry Labs</a>
-                  <a href="pages/project/wetlabs.html">Wet Labs</a>
-                  <a href="pages/project/results.html">Results</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Documentation
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="pages/documentation/protocols.html">Protocols</a>
-                  <a href="pages/documentation/labnotebook.html">Lab Notebook</a>
-                  <a href="pages/documentation/biosafety.html">Biosafety and Ethics</a>
-                  <a href="pages/documentation/resources.html">Resources</a>
-                </div>
-            </div>
-        </div>
-      <div class="main">
-        <h1>Dual Function Transcriptor Receptors</h1>
-        <h2>Introduction to our project/context/team</h2>
-        <h2>Promotional video/GIF?</h2>
-        <h2>Twitter feed</h2>
-        <div class="twitterfeed">
-          <a class="twitter-timeline"
-          href="https://twitter.com/imperialiDEC"
-          data-width=75%
-          data-height=75%>Tweets by @TwitterDev</a>
-        </div>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- Favicons -->
+  <!-- (Google) Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+  <!-- Main CSS-->
+  <link href="styles/index.css" rel="stylesheet">
+
+</head>
+
+<div id="loader"></div>
+
+<body>
+  <!-- Navigation menu -->
+  <div class="navbar">
+    <img id="nav-logo" src="content\induceR-logo-white.png" alt="induceR">
+    <div class="dropdown">
+      <button class="dropbtn">Documentation
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="pages/documentation/protocols.html">Protocols</a>
+        <a href="pages/documentation/labnotebook.html">Lab Notebook</a>
+        <a href="pages/documentation/biosafety.html">Biosafety and Ethics</a>
+        <a href="pages/documentation/resources.html">Resources</a>
       </div>
-    </body>
-    
-    <footer>Imperial College London iDEC 2021 Team ©</footer>
-    <script>'script/index.js'</script>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Project
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="pages/project/background.html">Background</a>
+        <a href="pages/project/design.html">Design</a>
+        <a href="pages/project/drylabs.html">Dry Labs</a>
+        <a href="pages/project/wetlabs.html">Wet Labs</a>
+        <a href="pages/project/results.html">Results</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="pages/about/team.html">Our Team</a>
+        <a href="pages/about/collab.html">Collaborators</a>
+      </div>
+    </div>
+    <a href="#home">Home</a>
+  </div>
+  <div class="main">
+    <img id="index-logo" src="content\induceR-logo-blue.png" alt="induceR">
+    <h1>DEVELOPING A DUAL FUNCTION QUORUM SENSING TRANSCRIPTOR REGULATOR</h1>
+    <h1>How can we engineer complex, dynamic behaviour in microbial communities?</h1>
+    <h1>Video</h1>
+    <h1>Twitter feed</h1>
+    <a class="twitter-timeline" href="https://twitter.com/imperialiDEC" data-width=75% data-height=75%>Tweets by
+      @imperialiDEC</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</body>
+<script src='script/index.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<footer>Imperial College London iDEC 2021 Team ©</footer>
+<script>'script/index.js'</script>
+
 </html>

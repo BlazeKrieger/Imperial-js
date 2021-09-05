@@ -3,24 +3,15 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Krub", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Background and body of all pages */
 
 body {
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    color: white;
-
-    /* Background Parallax effect*/
-    background-image: url("../content/quorum_bg.png");
-    height: 100%;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #254E6B;
 }  
 
 /* Hyperlink colouring */
@@ -37,17 +28,16 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: rgba(8, 167, 167);
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    background-color: #254E6B;
     position: fixed;
     top: 0;
-    width: 98.7%;
+    left: 0;
+    width: 100%;
   }
   
   .navbar a {
-    float: left;
-    font-size: 16px;
+    float: right;
+    font-size: 18px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -55,12 +45,12 @@ body {
   }
   
   .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
   }
   
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 18px;  
     border: none;
     outline: none;
     color: white;
@@ -71,14 +61,13 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: green;
+    background-color: #DF6489;
   }
   
   .dropdown-content {
     display: none;
     position: fixed;
-    background-color: green;
-    min-width: 160px;
+    background-color: #DF6489;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -93,7 +82,7 @@ body {
   
   .dropdown-content a:hover {
     background-color: #ddd;
-    color: green;
+    color: #DF6489;
   }
   
   .dropdown:hover .dropdown-content {
@@ -105,13 +94,13 @@ body {
 .main {
   padding: 50px;
   padding-top: 25px;
-  margin-top: 30%;
-  background-color: rgba(8, 167, 167, 0.9);
-  border-radius: 32px;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 10%;
 }
   
   .main h1 {
-    font-size: 75px;
+    font-size: 30px;
     text-align: center;
     margin-top: 0px;
   }
@@ -134,20 +123,11 @@ body {
   box-sizing: inherit;
 }
 
-/* Image formatting for Teams page */
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
 /* Accessibility: adaptive font sizing for screens <650px */
 
 @media screen and (max-width: 650px) {
   .navbar a {
-    float: left;
+    float: right;
     font-size: 0.6em;
     color: white;
     text-align: center;
@@ -156,7 +136,7 @@ body {
   }
 
   .main h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     margin-top: 0px;
   }
@@ -185,6 +165,31 @@ body {
     width: 100%;
     display: block;
   }
+}
+
+/* logo image */
+
+#index-logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+#nav-logo {
+  max-height: 45px;
+  padding-left: 14px;
+  padding-top: 5px;
+}
+
+/* Image formatting for Teams page */
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
 .card {
@@ -242,13 +247,6 @@ body {
 
 /* Twitter feed */
 
-.twitterfeed {
-  margin: 0 auto;
-}
-
-.twitter-timeline {
-  margin:auto;
-}
 
 /* Tabs inside page */
 
@@ -273,7 +271,7 @@ body {
 }
 
 .tablinks:hover {
-  background-color: green;
+  background-color: #DF6489;
 }
 
 .tabcontent {
@@ -316,14 +314,42 @@ body {
   text-align: center;
 }
 
+/* Loader */
+
+.loader-v1 {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Footer styling */
 
 footer {
+  overflow: hidden;
   padding: 16px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
   color: white;
-  background-color:rgba(8, 167, 167);
-  border-radius: 32px;;
+  background-color:#254E6B;
+  width: 100%;
   }
