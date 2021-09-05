@@ -94,8 +94,8 @@ body {
 .main {
   padding: 50px;
   padding-top: 25px;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10%;
 }
   
@@ -181,6 +181,12 @@ body {
   max-height: 45px;
   padding-left: 14px;
   padding-top: 5px;
+}
+
+#index-title {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding-top: 2.5%;
 }
 
 /* Image formatting for Teams page */
