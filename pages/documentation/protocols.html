@@ -21,28 +21,7 @@
 <body>
   <!-- Navigation menu -->
   <div class="navbar">
-    <a href="../../index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">About
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../about/team.html">Our Team</a>
-        <a href="../about/collab.html">Collaborators</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Project
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../projet/background.html">Background</a>
-        <a href="../project/design.html">Design</a>
-        <a href="../project/drylabs.html">Dry Labs</a>
-        <a href="../project/wetlabs.html">Wet Labs</a>
-        <a href="../project/results.html">Results</a>
-      </div>
-    </div>
+
     <div class="dropdown">
       <button class="dropbtn">Documentation
         <i class="fa fa-caret-down"></i>
@@ -54,29 +33,60 @@
         <a href="resources.html">Resources</a>
       </div>
     </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Project
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../project/background.html">Background</a>
+        <a href="../project/design.html">Design</a>
+        <a href="../project/drylabs.html">Dry Labs</a>
+        <a href="../project/wetlabs.html">Wet Labs</a>
+        <a href="../project/results.html">Results</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../about/team.html">Our Team</a>
+        <a href="../about/collab.html">Collaborators</a>
+      </div>
+    </div>
+
+    <a href="../../index.html">Home</a>
+
   </div>
   <div class="main">
     <h1>Protocols</h1>
 
     <!-- Tabs -->
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Gel Extraction')">Gel Extraction</button>
-      <button class="tablinks" onclick="openTab(event, 'LB Plates')">LB Plates</button>
+      <h2 class="tab-section">Our protocols</h2>
+      <button class="tablinks" onclick="openTab(event, 'gene assembly')">Gene Assembly </button>
+      <button class="tablinks" onclick="openTab(event, 'screen1')">Stage 1 Screening</button>
+      <button class="tablinks" onclick="openTab(event, 'screen2')">Stage 2 Screening</button>
+      <h2 class="tab-section">Generic protocols</h2>
       <button class="tablinks" onclick="openTab(event, 'Electrocompetent Cells')">Electrocompetent TOP10</button>
       <button class="tablinks" onclick="openTab(event, 'Electroporation')">Electroporation</button>
+      <button class="tablinks" onclick="openTab(event, 'Gel Extraction')">Gel Extraction</button>
+      <button class="tablinks" onclick="openTab(event, 'LB Plates')">LB Plates</button> 
       <button class="tablinks" onclick="openTab(event, 'Plasmid Purification')">Plasmid Purification</button>
     </div>
 
     <div id="Gel Extraction" class="tabcontent">
-      <h3>Gel Extraction Protocol</h3>
-      <p>MATERIALS AND APPARATUS:<br><br>
+      <h3>DESCRIPTION:</h3>
+      <h3>MATERIALS AND APPARATUS:</h3>
         • Isopropanol (100%)<br>
         • Water bath at 50°C<br>
         • Buffer PE with 96-100% ethanol (see bottle label for volume)<br>
         • Centrifuge at 13,000 rpm<br>
         • Scalpel<br>
-        • Buffer QG<br><br>
-        PROCEDURE:<br><br>
+        • Buffer QG
+        <h3>PROCEDURE:</h3>
         Steps:<br><br>
         1. Excise the DNA fragment from the agarose gel with a clean, sharp scalpel.<br><br>
         2. Weigh the gel slice in a colorless tube. Add 3 volumes Buffer QG to 1 volume gel
@@ -111,8 +121,8 @@
     </div>
 
     <div id="LB Plates" class="tabcontent">
-      <h3>Setting LB PLates Protocol</h3>
-      <p>MATERIALS AND APPARATUS:<br><br>
+      <h3>DESCRIPTION:</h3>
+      <h3>MATERIALS AND APPARATUS:</h3>
         • 2.5g yeast extract<br>
         • 5g peptone <br>
         • 5g NaCl<br>
@@ -124,7 +134,7 @@
         • Ice bucket for keeping antibiotic on<br>
         • Chloroamphenicol antibiotic stored at 1000X concentration, dissolved in EtOH <br>
         o Recommended stock conc = 25mg/mL, working concentration = 25ug/mL<br><br>
-        PROCEDURE:<br><br>
+        <h3>PROCEDURE:</h3>
         Per 500mL molten LB agar: (25 plates)<br><br>
         NOTE: This makes 25 plates, but we only need 16 plates total for Stage 1. <br><br>
         1. Weigh out the following into a 1L sterile bottle (20g total, pre-mixed powder in Hackspace contains first
@@ -156,8 +166,8 @@
     </div>
 
     <div id="Electrocompetent Cells" class="tabcontent">
-      <h3>Electrocompetent TOP10 Protocol</h3>
-      <p>MATERIALS AND APPARATUS:<br><br>
+      <h3>DESCRIPTION:</h3>
+      <h3>MATERIALS AND APPARATUS:</h3>
         • Sterile distilled water<br>
         • 10% glycerol<br>
         • Graduated cylinder <br>
@@ -193,7 +203,7 @@
         • Dilute 1 volume of molecular biology-grade glycerol in 9 volumes of sterile pure H2O. <br>
         • Sterilise the solution by passing it through a pre-rinsed 0.22um filter. <br>
         • Store in 200mL aliquots at 4C. <br><br>
-        PROCEDURE: <br><br>
+        <h3>PROCEDURE:</h3>
         NOTE: All steps should be carried out aseptically in the fume hood, unless otherwise stated, keep all reagents
         on ice, time ~ 55 min total.<br><br>
         Day 1:<br><br>
@@ -254,9 +264,8 @@
     </div>
 
     <div id="Electroporation" class="tabcontent">
-      <h3>Electroporation Protocol</h3>
-      <p>
-        MATERIALS AND APPARATUS:<br><br>
+      <h3>DESCRIPTION:</h3>
+      <h3>MATERIALS AND APPARATUS:</h3>
         • Electrocompetent TOP10 cells stored in –80C freezer<br>
         • Plasmid to be transformed into cells<br>
         • Ice bucket<br>
@@ -332,7 +341,7 @@
             • Pre-chill in 4C freezer: plasmid DNA, electroporation cuvettes, microcentrifuge tubes, distilled water,
             and 10% glycerol. <br><br>
 
-            PROCEDURE:<br><br>
+            <h3>PROCEDURE:</h3>>
             1. Thaw the 40uL aliquots of electrocompetent cells on ice. Add 2 µL of purified DNA from Miniprep. <br><br>
             2. Mix by gently flicking the tube containing the electrocompetent cell + DNA mixture. Do not handle cells
             vigorously as this will reduce transformation efficiency. Let the mixture sit on ice for 1 minute.<br><br>
@@ -373,7 +382,7 @@
     </div>
 
     <div id="Plasmid Purification" class="tabcontent">
-      <h3>QIAGEN Plasmid Purification Protocol</h3>
+      <h3>DESCRIPTION:</h3>
       <p>
         Background: all QIAGEN plasmid purification protocols are based on a modified alkaline lysis procedure, followed
         by binding plasmid DNA to resin under low-salt and pH conditions. A medium-salt wash is then conducted to remove
@@ -387,7 +396,7 @@
 
 
 
-        MATERIALS AND APPARATUS:<br><br>
+        <h3>MATERIALS AND APPARATUS:</h3>>
 
         • Ice<br>
 
@@ -403,14 +412,14 @@
 
 
 
-        MATERIALS IN THE MINIKIT (12125):<br><br>
+        <h3>MATERIALS IN THE MINIKIT (12125):</h3>
 
         • x100 QIAGEN-tip 20<br>
 
         • 2 x 20 ml Buffer P1<br>
 
         • 2 x 20 ml Buffer P2<br>
- 
+
         • 2 x 20 ml Buffer P3<br>
 
         • 2 x 60 ml Buffer QBT<br>
@@ -425,7 +434,8 @@
 
         Prep steps:<br><br>
 
-        1. Centrifuge RNase A briefly, then add the whole bottle into Buffer P1 (which gives a final concentration of 100
+        1. Centrifuge RNase A briefly, then add the whole bottle into Buffer P1 (which gives a final concentration of
+        100
         ug/mL). Then add the whole bottle of LyseBlue into Buffer P1.<br><br>
 
         2. Check Buffer P2 for SDS precipitation<br><br>
@@ -440,9 +450,10 @@
 
 
 
-        PROCEDURE:<br><br>
+        <h3>PROCEDURE:</h3>
 
-        1. Grow cells to reach a cell density of approximately 3–4 x 109 cells per milliliter. (For 1 ml of cells, OD = 5;
+        1. Grow cells to reach a cell density of approximately 3–4 x 109 cells per milliliter. (For 1 ml of cells, OD =
+        5;
         for 5 ml of cells, OD =~1)<br><br>
 
         - NOTE: Use a tube or flask with a volume of at least 4 times the volume of the culture for these:<br><br>
@@ -457,7 +468,8 @@
         3. Resuspend the bacterial pellet in 0.3 ml of Buffer P1 (ensure RNase A has been already added) in a 2 ml Eppy
         (for centrifuging).<br><br>
 
-        4. Add 0.3 ml of Buffer P2, mix thoroughly by vigorously inverting the sealed tube 4−6 times, and incubate at room
+        4. Add 0.3 ml of Buffer P2, mix thoroughly by vigorously inverting the sealed tube 4−6 times, and incubate at
+        room
         temperature for 5 min.<br><br>
 
         NOTE: Do not vortex. Do not leave solution for longer than 5mins. Close buffer P2 quickly (to avoid CO2 reacting
@@ -478,8 +490,10 @@
 
         NOTE: Try not to let the column dry out<br><br>
 
-        8. (once centrifuge is finished) keep the supernatant containing plasmid DNA – pour it into the column quickly. The
-        supernatant (containing plasmid DNA) will be clear, the precipitate (containing genomic GNA) will be white.<br><br>
+        8. (once centrifuge is finished) keep the supernatant containing plasmid DNA – pour it into the column quickly.
+        The
+        supernatant (containing plasmid DNA) will be clear, the precipitate (containing genomic GNA) will be
+        white.<br><br>
 
         NOTE: After centrifugation, the supernatant should be clear - centrifuge again if needed.<br><br>
 
@@ -489,7 +503,8 @@
         10. Remove waste beaker from under the column and replace with 1.5 ml Eppy. Add 0.8 ml Buffer QF to elute the
         plasmid DNA into the Eppy.<br><br>
 
-        11. Take 2 µL of the elute and use Nanodrop machine (ds DNA setting) to quantify the amount (ideally around 50 ng
+        11. Take 2 µL of the elute and use Nanodrop machine (ds DNA setting) to quantify the amount (ideally around 50
+        ng
         per µL of DNA), and get a purity score and quality score (ideally above 1.8-2.1). Blank first with 2 µL of
         elution buffer.<br><br>
 
@@ -511,7 +526,8 @@
         13. Wash DNA pellet with 1 ml of 70% ethanol and centrifuge at 15,000 x g for 10 min.
         Carefully decant the supernatant without disturbing the pellet.<br><br>
 
-        14. Open the tube, gently blot off excess ethanol, and leave to air-dry the pellet for 5–10 min, and redissolve the
+        14. Open the tube, gently blot off excess ethanol, and leave to air-dry the pellet for 5–10 min, and redissolve
+        the
         DNA in a suitable volume (0.2 - 0.5 ml) of elution buffer.<br><br>
 
         15. Re-measure DNA quantity using Nanodrop (purity/quality scores should be ideally above 1.8-2.1), and
@@ -527,12 +543,13 @@
         Troubleshooting: take samples at step 7, 9, 10 and 11 to run agarose gel analysis and see where the problem
         occurred.<br><br>
 
-        <a href="https://www.qiagen.com/gb/resources/download.aspx?id=0bd0c5fb-c271-43e7-af43-32d539374fa9&lang=en">Source</a><br><br>
+        <a
+          href="https://www.qiagen.com/gb/resources/download.aspx?id=0bd0c5fb-c271-43e7-af43-32d539374fa9&lang=en">Source</a><br><br>
       </p>
     </div>
 
     <script>
-      function openTab(evt, cityName) {
+      function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -542,7 +559,7 @@
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
       }
     </script>
