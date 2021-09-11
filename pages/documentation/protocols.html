@@ -16,6 +16,8 @@
   <!-- Main CSS-->
   <link href="../../styles/index.css" rel="stylesheet">
 
+  <script type="text/javascript" src="../../script/functions.js"></script>
+
 </head>
 
 <body>
@@ -547,22 +549,6 @@
           href="https://www.qiagen.com/gb/resources/download.aspx?id=0bd0c5fb-c271-43e7-af43-32d539374fa9&lang=en">Source</a><br><br>
       </p>
     </div>
-
-    <script>
-      function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
   </div>
 </body>
 <footer>Imperial College London iDEC 2021 Team ©</footer>

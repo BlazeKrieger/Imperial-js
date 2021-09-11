@@ -13,6 +13,7 @@
   <!-- Main CSS-->
   <link href="../../styles/index.css" rel="stylesheet">
 
+  <script src="../../script/timeline.js" type="module"></script>
 </head>
 
 <body>
@@ -69,7 +70,7 @@
           <li><span>1998</span></li>
           <li><span>1999</span></li>
           <li><span>2000</span></li>
-          <li><span>2001</span></li>
+          <li><a href="#2001">2001</a></li>
           <li><span>2002</span></li>
           <li><span>2003</span></li>
           <li><span>2004</span></li>
@@ -171,7 +172,7 @@
             бренда, конечно, разнородно отталкивает институциональный клиентский спрос. Стимулирование сбыта, не меняя
             концепции, изложенной выше, спорадически уравновешивает фирменный рейтинг, повышая конкуренцию. Концепция
             новой стратегии оправдывает BTL.</p>
-          <h2 class="milestone">2001</h2>
+          <h2 class="milestone" id="2001">2001</h2>
           <p>По сути, стратегия позиционирования определяет рекламный макет. Маркетинговая активность отражает
             медиаплан, не считаясь с затратами. Общество потребления переворачивает ролевой поведенческий таргетинг.</p>
           <p>Рекламный блок, суммируя приведенные примеры, развивает межличностный отраслевой стандарт. Надо сказать,
@@ -356,70 +357,5 @@
     </article>
   </div>
 </body>
-<script>
-  "use strict";
 
-  $(() => {
-    let stickyTop = 0,
-      scrollTarget = false;
-    let timeline = $('.timeline__nav'),
-      items = $('li', timeline),
-      milestones = $('.timeline__section .milestone'),
-      offsetTop = parseInt(timeline.css('top'));
-    const TIMELINE_VALUES = {
-      start: 190,
-      step: 30
-    };
-    $(window).resize(function () {
-      timeline.removeClass('fixed');
-      stickyTop = timeline.offset().top - offsetTop;
-      $(window).trigger('scroll');
-    }).trigger('resize');
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > stickyTop) {
-        timeline.addClass('fixed');
-      } else {
-        timeline.removeClass('fixed');
-      }
-    }).trigger('scroll');
-    items.find('span').click(function () {
-      let li = $(this).parent(),
-        index = li.index(),
-        milestone = milestones.eq(index);
-
-      if (!li.hasClass('active') && milestone.length) {
-        scrollTarget = index;
-        let scrollTargetTop = milestone.offset().top - 80;
-        $('html, body').animate({
-          scrollTop: scrollTargetTop
-        }, {
-          duration: 400,
-          complete: function complete() {
-            scrollTarget = false;
-          }
-        });
-      }
-    });
-    $(window).scroll(function () {
-      let viewLine = $(window).scrollTop() + $(window).height() / 3,
-        active = -1;
-
-      if (scrollTarget === false) {
-        milestones.each(function () {
-          if ($(this).offset().top - viewLine > 0) {
-            return false;
-          }
-
-          active++;
-        });
-      } else {
-        active = scrollTarget;
-      }
-
-      timeline.css('top', -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + 'px');
-      items.filter('.active').removeClass('active');
-      items.eq(active != -1 ? active : 0).addClass('active');
-    }).trigger('scroll');
-  });
-</script>
 <footer>Imperial College London iDEC 2021 Team ©</footer>

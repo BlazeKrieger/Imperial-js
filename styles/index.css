@@ -114,6 +114,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
   
   .navbar a {
@@ -150,7 +151,7 @@ body {
     position: fixed;
     background-color: #DF6489;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 998;
   }
   
   .dropdown-content a {
@@ -328,12 +329,13 @@ body {
 
 .tab-section {
   color: white;
+  background-color: #254E6B;
   font-size: 18px;
   text-align: center;
 }
 
 .tab button {
-  width: 85%;
+  width: 100%;
   display: block;
 }
 
@@ -415,7 +417,7 @@ article {
 }
 .timeline__nav {
   position: fixed;
-  z-index: 99;
+  z-index: 1;
   top: 0;
   transition: top 0.3s ease-out;
 }
@@ -433,14 +435,14 @@ article {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-.timeline__nav ul li.active {
+.timeline__nav ul li a.active {
   font-weight: bold;
   color: #f94125;
   border-bottom: 1px dotted transparent;
   transform: scale(1.2);
 }
-.timeline__nav ul li:hover {
-  color: #000;
+.timeline__nav ul li a:hover {
+  color: #DF6489;
 }
 
 
@@ -456,4 +458,5 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 999;
   }
