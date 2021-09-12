@@ -9,6 +9,7 @@ html {
   min-height: 100%;
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -418,7 +419,7 @@ article {
 .timeline__nav {
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 10%;
   transition: top 0.3s ease-out;
 }
 .timeline__nav ul {
@@ -435,6 +436,11 @@ article {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+
+.timeline__nav ul li a:visited {
+  color: #bfc1c3;
+}
+
 .timeline__nav ul li a.active {
   font-weight: bold;
   color: #f94125;
@@ -443,6 +449,10 @@ article {
 }
 .timeline__nav ul li a:hover {
   color: #DF6489;
+}
+
+.milestone {
+  padding-top: 50px;
 }
 
 
