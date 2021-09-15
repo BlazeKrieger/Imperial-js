@@ -55,53 +55,68 @@
     </div>
 
     <a href="../../index.html">Home</a>
-    
+
   </div>
+
+  <div class="banner">
+    <h1 class="banner-head">Dry Labs</h1>
+  </div>
+
+  <img id="el-membrane" src="..\..\content\el_membrane.svg" alt="membrane">
+
   <div class="main">
-    <h1>Dry Labs</h1>
-    <h3>3D visualisation instructions:</h3>
-    Use mouse to manipulate the 3D render. <br><br>
-    To rotate: drag molecule to desired direction.<br><br>
-    To zoom: hold shift + drag downwards to zoom in/upwards to zoom out.<br><br>
-    To pan: hold ctrl + drag to desired direction.
-    <div class='mol_viewer'>
-      <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-      <div class='viewer_3Dmoljs' data-pdb='1H0M' data-backgroundcolor='0xffffff' data-style='stick'
-        data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white'
-        data-select2='chain:B' data-style2='stick' data-select3='chain:E' data-style3='cartoon:cartoon=spectrum'
-        data-select4='chain:F' data-style4='cartoon:cartoon=spectrum' data-select5='chain:G'
-        data-style5='cartoon:cartoon=spectrum' data-select6='chain:H' data-style6='cartoon:cartoon=spectrum'>
-        1H0M
+
+    <div class="section1">
+      <h3>3D visualisation instructions:</h3>
+      Use mouse to manipulate the 3D render. <br><br>
+      To rotate: drag molecule to desired direction.<br><br>
+      To zoom: hold shift + drag downwards to zoom in/upwards to zoom out.<br><br>
+      To pan: hold ctrl + drag to desired direction.
+      <div class='mol_viewer'>
+        <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+        <div class='viewer_3Dmoljs' data-pdb='1H0M' data-backgroundcolor='0xffffff' data-style='stick'
+          data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white'
+          data-select2='chain:B' data-style2='stick' data-select3='chain:E' data-style3='cartoon:cartoon=spectrum'
+          data-select4='chain:F' data-style4='cartoon:cartoon=spectrum' data-select5='chain:G'
+          data-style5='cartoon:cartoon=spectrum' data-select6='chain:H' data-style6='cartoon:cartoon=spectrum'>
+          1H0M
+        </div>
+        <h4>3D structure of TraR protein bound to autoinducer and to target DNA</h4>
       </div>
-      <h4>3D structure of TraR protein bound to autoinducer and to target DNA</h4>
     </div>
 
-    <h2>Methods</h2>
-    <h3>Structure prediction</h3>
-    We ran structure prediction of the wild type EsaR sequence on five software:
-    RaptorX (the article is mainly about template-based prediction that we didn’t use,
-    but it explains the template-free prediction as well, so might be useful for us),
-    I-TASSER, Phyre, Robetta, and AlphaFold. A template structure was needed for I-TASSER and, hence,
-    1H0M was used.<br><br>
-    Check if there were any parameters needed <br>
-    - I-TASSER needed a template<br>
-    - How many iterations<br>
-    - (1H0M was used as a template in PyMOL later to visualize the results from structure prediction)<br><br>
+    <div class="section2">
+      <h2>Methods</h2>
+      <h3>Structure prediction</h3>
+      We ran structure prediction of the wild type EsaR sequence on five software:
+      RaptorX (the article is mainly about template-based prediction that we didn’t use,
+      but it explains the template-free prediction as well, so might be useful for us),
+      I-TASSER, Phyre, Robetta, and AlphaFold. A template structure was needed for I-TASSER and, hence,
+      1H0M was used.<br><br>
+      Check if there were any parameters needed <br>
+      - I-TASSER needed a template<br>
+      - How many iterations<br>
+      - (1H0M was used as a template in PyMOL later to visualize the results from structure prediction)<br><br>
 
-    <h3>Ligand Docking</h3>
-    Firstly, we conducted automated binding site prediction in ProteinsPlus,
-    while using 5 previously predicted structures.<br>
-    Secondly, we docked the cognate ligand N-(3-oxohexanoyl)-L-homoserine lactone within one of the 8 binding sites
-    recognized by ProteinsPlus. For that, three softwares were used:
-    DockThor, SwissDock, and AAl. Also, manual docking was conducted in PyMOL. <br>
-    Later, PyMOL (the article goes through the dockings with PyMOL and Autodock/Vina which is similar to what we did
-    with manual (PyMOL) and automated (DockThor, SwissDock) docking)
-    was used to conduct two comparisons of results from DockThor and SwissDock,
-    and manual and automated docking.<br><br>
+      <h3>Ligand Docking</h3>
+      Firstly, we conducted automated binding site prediction in ProteinsPlus,
+      while using 5 previously predicted structures.<br>
+      Secondly, we docked the cognate ligand N-(3-oxohexanoyl)-L-homoserine lactone within one of the 8 binding sites
+      recognized by ProteinsPlus. For that, three softwares were used:
+      DockThor, SwissDock, and AAl. Also, manual docking was conducted in PyMOL. <br>
+      Later, PyMOL (the article goes through the dockings with PyMOL and Autodock/Vina which is similar to what we did
+      with manual (PyMOL) and automated (DockThor, SwissDock) docking)
+      was used to conduct two comparisons of results from DockThor and SwissDock,
+      and manual and automated docking.<br><br>
 
-    <h3>Protein-ligand Interaction Analysis</h3>
-    We did manual and automated protein-ligand interaction profiling in PyMOL and LigPlot, respectively. Docked and
-    undocked structures were analyzed separately.
+      <h3>Protein-ligand Interaction Analysis</h3>
+      We did manual and automated protein-ligand interaction profiling in PyMOL and LigPlot, respectively. Docked and
+      undocked structures were analyzed separately.
+    </div>
+
+
+
+
 
   </div>
 </body>
