@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+/* Colour Swatch */
+
+:root {
+  --darkblue: #07273D;
+  --red: #DF6489;
+  --lightblue: #DFEDF8;
+  --grey: #E9E9E9;
+}
+
 html {
   min-height: 100%;
   position: relative;
@@ -14,19 +23,19 @@ html {
 
 h1 {
   font-family: "Baloo 2", cursive;
-  color: #DF6489;
+  color: var(--red);
   font-size: 50px;
 }
 
 h2 {
   font-family: "Baloo 2", cursive;
-  color: #254E6B;
+  color: var(--darkblue);
   font-size: 30px;
 }
 
 h3, h4, h5, h6, p {
     font-family: "Source Sans Pro", sans-serif;
-    color: #254E6B;
+    color: var(--darkblue);
 }
 
 /* Background and body of all pages */
@@ -34,13 +43,13 @@ h3, h4, h5, h6, p {
 body {
     /* box-sizing: border-box; */
     font-family: "Source Sans Pro", sans-serif;
-    color: #254E6B;
+    color: var(--darkblue);
     margin-bottom: 10%;
 }  
 
 .index-title {
   font-family: "Source Sans Pro", sans-serif;
-  color: #254E6B;
+  color: var(--darkblue);
   font-size: 30px;
 }
 
@@ -60,7 +69,7 @@ body {
   height: 80%;
   margin: 0 auto;
   margin-bottom: 5%;
-  background: #E9E9E9;
+  background: var(--grey);
 }
 
 .placeholder-container {
@@ -75,7 +84,7 @@ body {
   height: 271px;
 
   margin-right: 23.5px;
-  background: #DFEDF8;
+  background: var(--lightblue);
 }
 
 #descript1 {
@@ -95,7 +104,7 @@ body {
   width: 467px;
   height: 271px;
 
-  background: #DFEDF8;
+  background: var(--lightblue);
 }
 
 #video {
@@ -110,7 +119,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #254E6B;
+    background-color: var(--darkblue);
     position: fixed;
     top: 0;
     left: 0;
@@ -144,13 +153,13 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #DF6489;
+    background-color: var(--red);
   }
   
   .dropdown-content {
     display: none;
     position: fixed;
-    background-color: #DF6489;
+    background-color: var(--red);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 998;
   }
@@ -165,7 +174,7 @@ body {
   
   .dropdown-content a:hover {
     background-color: #ddd;
-    color: #DF6489;
+    color: var(--red);
   }
   
   .dropdown:hover .dropdown-content {
@@ -277,7 +286,7 @@ body {
   overflow: hidden;
   width: 981px;
   height: 80%;
-  background-color: #E9E9E9;
+  background-color: var(--grey);
   margin: 0 auto;
 }
 
@@ -319,8 +328,8 @@ body {
 
 .tab {
   overflow: hidden;
-  background-color: #254E6B;
-  border: 1px solid #254E6B;
+  background-color: var(--darkblue);
+  border: 1px solid var(--darkblue);
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   float: left;
@@ -330,7 +339,7 @@ body {
 
 .tab-section {
   color: white;
-  background-color: #254E6B;
+  background-color: var(--darkblue);
   font-size: 18px;
   text-align: center;
 }
@@ -345,7 +354,7 @@ body {
   border: none;
   font-size: 16px;
   background-color: white;
-  color: #254E6B;
+  color: var(--darkblue);
   padding: 14px 16px;
   text-decoration: none;
   margin-bottom: none;
@@ -353,11 +362,11 @@ body {
 }
 
 .tablinks:hover {
-  background-color: #DF6489;
+  background-color: var(--red);
 }
 
 .tablinks.active {
-  background-color: #DF6489;
+  background-color: var(--red);
 }
 
 .tabcontent {
@@ -380,7 +389,7 @@ body {
 }
 
 .tabcontent h3 {
-  color: #254E6B;
+  color: var(--red);
 }
 
 /* Molecule viewer */
@@ -448,7 +457,7 @@ article {
   transform: scale(1.2);
 }
 .timeline__nav ul li a:hover {
-  color: #DF6489;
+  color: var(--red);
 }
 
 .milestone {
@@ -463,7 +472,7 @@ footer {
   padding: 16px;
   text-align: center;
   color: white;
-  background-color:#254E6B;
+  background-color:var(--darkblue);
   position: absolute;
   left: 0;
   bottom: 0;
