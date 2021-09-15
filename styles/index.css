@@ -19,6 +19,7 @@ html {
   position: relative;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: var(--darkblue);
 }
 
 h1 {
@@ -38,6 +39,52 @@ h3, h4, h5, h6, p {
     color: var(--darkblue);
 }
 
+/* Banner */
+
+.banner {
+  background-color: var(--darkblue);
+  height: 70%;
+}
+
+.banner-title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 30px;
+  padding-left: 1.5%;
+  width: 60%;
+  text-align: center;
+}
+
+#home-qs {
+  position: absolute;
+  width: 40%;
+  height: 12%;
+  left: 60%;
+  top: 5%;
+}
+
+#ellipse {
+  position: absolute;
+  width: 33%;
+  height: 12%;
+  left: 65%;
+  top: 4%;
+
+  background: #df6489b6;
+  border: 1px dashed #000000;
+  border-radius: 100%;
+  filter: blur(300px);
+}
+
+/* Element membrane */
+
+#el-membrane {
+  top: 0;
+  background-color: white;
+  width:100%;
+  margin: 0 auto;
+}
+
 /* Background and body of all pages */
 
 body {
@@ -45,6 +92,8 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     color: var(--darkblue);
     margin-bottom: 10%;
+    width: 100%;
+    margin: 0 auto;
 }  
 
 .index-title {
@@ -185,9 +234,9 @@ body {
 
 .main {
   padding: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
 }
   
   .main h1 {
@@ -260,12 +309,11 @@ body {
 
 /* logo image */
 
-#index-logo {
-  width: 50%;
+#banner-logo {
+  width: 40%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 #nav-logo {
