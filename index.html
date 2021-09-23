@@ -79,15 +79,14 @@
   <div class="main" id="main">
 
     <div class="section1">
-      <h1 class="index-title">How can we engineer complex, dynamic behaviour in microbial communities?</h1>
-      <div id="placeholder1">graphic of a microbial community with quorum sensing and distributed cell burden</div>
-      <div class="placeholder-container">
-        <div id="placeholder2"></div>
-        <div id="placeholder3"></div>
-      </div>
-      <div class="placeholder-container">
-        <p id="descript1">Quorum sensing molecules are used for cell to cell communication.</p>
-        <p id="descript2">Distributed cell burden allows the circuit to be increasingly complex.</p>
+      <div class="main-container">
+        <div id="ellipse3"></div>
+        <img id="fig1" src="content/index/fig1.svg">
+        <h3 id="descript1" class="description">Cells communicate via quorum sensing - release of molecules that can then be picked up by other cells to change an entire community’s behaviour.</h3>
+        <h3 id="descript2" class="description">Introducing modified quorum sensing systems into an individual cell takes up a lot of that cell’s resources and makes it ‘tired’. This is cell burden. To help that cell distribute this burden, the circuit can be split across the cells.</h3>
+        <img id="fig2" src="content/index/fig2.svg">
+        <img id="fig3" src="content/index/fig3.svg">
+        <h3 id="descript3" class="description">induceR develops a new quorum sensing protein that associates with a non-natural molecule. Cells will then have both, a natural and a non-natural quorum sensing systems. It helps to reduce the cell burden.</h3>
       </div>
     </div>
 
@@ -95,14 +94,46 @@
 
     <div class="section2">
       <h2>WORKFLOW</h2>
+      <h3>Explanation of workflow</h3>
+      <h2>DRY LAB</h2>
+      <div class="lab-container">
+        <div id="fig-bg-1">
+          <h3 class="white">STAGE 1</h3>
+          <h3 class="white">STRUCTURE PREDICTION</h3>
+        </div>
+        <div id="fig-bg-2">
+          <h3 class="white">STAGE 2</h3>
+          <h3 class="white">MOLECULE POSITION OPTIMISATION</h3>
+        </div>
+        <div id="fig-bg-3">
+          <h3 class="white">STAGE 3</h3>
+          <h3 class="white">MUTANT ANALYSIS</h3>
+        </div>
+      </div>
+      <h2>WET LAB</h2>
+      <div class="lab-container">
+        <div id="fig-bg-1">
+          <h3 class="white">STAGE 1</h3>
+          <h3 class="white">BEST MOLECULE SELECTION</h3>
+          <img class="figs" src="content/index/choose-molecule.svg">
+        </div>
+        <div id="fig-bg-2">
+          <h3 class="white">STAGE 2</h3>
+          <h3 class="white">MUTATED GENE ASSEMBLY</h3>
+          <img class="figs" src="content/index/mutant-assem.svg">
+        </div>
+        <div id="fig-bg-3">
+          <h3 class="white">STAGE 3</h3>
+          <h3 class="white">SCREENING MUTANTS</h3>
+          <img class="figs" src="content/index/screening.svg">
+        </div>
+      </div>
     </div>
 
     <img id="el-membrane" src="content\el_membrane.svg" alt="membrane">
 
     <div class="section1">
-      <h1 class="index-title">Video</h1>
-      <div id="video">Video</div>
-      <h1 class="index-title">Twitter feed</h1>
+      <h2>Twitter feed</h2>
       <div id="twitter-table">
         <a class="twitter-timeline" href="https://twitter.com/imperialiDEC" data-width=75% data-height=100%>Tweets by
           @imperialiDEC</a>
@@ -110,6 +141,9 @@
       </div>
     </div>
   </div>
+  <a href="#">
+    <img id="back-to-top" src="content/back-to-top.svg">
+  </a>
   <footer>Imperial College London iDEC 2021 Team ©</footer>
 </body>
 <script src='script/index.js'></script>
