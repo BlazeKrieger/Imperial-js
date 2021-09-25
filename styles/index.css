@@ -107,6 +107,23 @@ h3, h4, h5, h6, p {
   animation-iteration-count: infinite;
 }
 
+#ellipse-mini {
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  left: 40%;
+  top: 17%;
+
+  background: #df6489;
+  border: 1px dashed #000000;
+  border-radius: 100%;
+  filter: blur(300px);
+
+  animation-name: pulse;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+}
+
 #ellipse2 {
   position: absolute;
   width: 70%;
@@ -204,7 +221,8 @@ h3, h4, h5, h6, p {
   z-index: 990;
 }
 
-#arrow-down:hover {
+#arrow-down:hover, #back-to-top:hover, #evonetix:hover,
+#icl:hover, #genewiz:hover, #synbic:hover, #ah:hover, #multus:hover {
   transform: scale(1.1);
 }
 
@@ -251,11 +269,10 @@ body {
 .main-container {
   display: grid;
   grid-template-columns: repeat(2,1fr); /* repeat 2 columns of equal width for all rows */
-  grid-auto-rows: minmax(100px,auto);
   width: 80%;
   margin: 0 auto;
   grid-gap: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 
 #fig1 {
@@ -305,13 +322,17 @@ body {
   width: 70%;
 }
 
+.figs2 {
+  display: block;
+  margin: 0 auto;
+}
+
 .lab-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr); /* repeat 2 columns of equal width for all rows */
+  grid-template-columns: repeat(3,1fr); /* repeat 3 columns of equal width for all rows */
   grid-auto-rows: minmax(100px,auto);
   margin: 0 auto;
   grid-gap: 5%;
-  padding-bottom: 10%;
 }
 
 #fig-bg-1 {
@@ -332,6 +353,54 @@ body {
   background-color: var(--darkblue);
 }
 
+#evonetix{
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+}
+
+#icl {
+  grid-row: 1;
+  grid-column: 2;
+  transition: all .2s ease-in-out;
+}
+
+#icl img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#genewiz {
+  grid-row: 1;
+  grid-column: 3;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+}
+
+#synbic {
+  grid-row: 2;
+  grid-column: 1;
+  margin: 0 auto;
+  margin-top: 20%;
+  transition: all .2s ease-in-out;
+}
+
+#ah {
+  grid-row: 2;
+  grid-column: 2;
+  margin: 0 auto;
+  margin-top: 20%;
+  transition: all .2s ease-in-out;
+}
+
+#multus {
+  grid-row: 2;
+  grid-column: 3;
+  margin: 0 auto;
+  margin-top: 20% ;
+  transition: all .2s ease-in-out;
+}
 
 /* Navigation bar styling */
 
@@ -426,6 +495,11 @@ body {
   width: 981px;
   margin: 0 auto;
   padding: 12px 16px;
+}
+
+#text-center {
+  text-align: justify;
+  width: 70%;
 }
 
 *, *:before, *:after {
@@ -641,11 +715,19 @@ body {
 
 /* Molecule viewer */
 
+#mol-instruction {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0 auto;
+}
+
 .mol_viewer {
-  height: 50%;
-  width: 40%;
-  margin: 64px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 128px;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .viewer_3Dmoljs {
@@ -658,6 +740,38 @@ body {
 
 .mol_viewer h1, .mol_viewer h2, .mol_viewer h3, .mol_viewer h4, .mol_viewer p {
   text-align: center;
+}
+
+/* Labs main content distribution */
+
+#stage-title1 {
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+#stage-title2 {
+  grid-row: 3;
+  grid-column: span 2;
+}
+
+#stage-title3 {
+  grid-row: 5;
+  grid-column: span 2;
+}
+
+#stage1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#stage2 {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+#stage3 {
+  grid-row: 6;
+  grid-column: 1;
 }
 
 /* Lab Notebook Timeline */
@@ -676,12 +790,12 @@ article {
 .timeline__nav {
   position: fixed;
   z-index: 1;
-  top: 10%;
+  top: 20%;
   transition: top 0.3s ease-out;
   overflow: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  height: 90%;
+  height: 70%;
   width: 10%;
 }
 
@@ -697,7 +811,6 @@ article {
   list-style: none;
   list-style-position: inside;
   margin: 15px 0;
-  padding-bottom: 15%;
 }
 .timeline__nav ul li {
   margin: 15px 0;
@@ -736,10 +849,6 @@ article {
   right: 2.5%;
   z-index: 1000;
   transition: all .2s ease-in-out;
-}
-
-#back-to-top:hover {
-  transform: scale(1.1);
 }
 
 /* Footer styling */
