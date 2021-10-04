@@ -26,7 +26,7 @@ timeline.scrollAnimation = function () {
     for (;;) {
         alert("loop")
         for (var i in milestones) {
-            var segment = el(String(milestones[i].innerText)).getBoundingClientRect().top;
+            var segment = el(String(milestones[i].innerText)).getBoundingClientRect().top; //distance between page top and top of element
             if (segment <= 0) {
                 milestones[i].setAttribute("class", String("active"));
             }
